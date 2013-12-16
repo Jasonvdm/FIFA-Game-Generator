@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  team_one: MyString
+  team_two: MyString
+  cpu_game: false
+  player_one_id: 1
+  player_two_id: 1
+  player_one_score: 1
+  player_two_score: 1
+  is_tie: false
+  winner: MyString
+
+two:
+  team_one: MyString
+  team_two: MyString
+  cpu_game: false
+  player_one_id: 1
+  player_two_id: 1
+  player_one_score: 1
+  player_two_score: 1
+  is_tie: false
+  winner: MyString

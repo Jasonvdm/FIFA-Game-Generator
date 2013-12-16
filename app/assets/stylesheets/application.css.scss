@@ -1,0 +1,85 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ @import "bootstrap";
+
+ .square {
+ 	color: black;
+ 	margin-top: 15px;
+ 	background-color: rgba(250, 240, 250, 0.8);
+ 	padding: 18px  25px;
+
+  //@include border-radius(7px);
+  @include box-shadow(black 0px 2px 17px -1px);
+
+  div {
+  }
+}
+
+* {
+	font-family: "Helvetica Neue";
+}
+
+a{
+  color:black;
+	&:hover {
+		color: black !important;
+    text-decoration: none !important;
+    background: none !important;
+	}
+
+  &:visited {
+    color:black !important;
+  }
+}
+
+.front-page-link{
+	&:hover{
+		background-color: none !important;
+		font-size: 22px !important;
+	}
+}
+
+h1, h2 {
+  // letter-spacing: 2px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font: 24px/30px "Helvetica Neue";
+  font-weight: 300;
+  &.big {
+  	font: 55px/70px "Helvetica Neue";
+  	font-weight: 500;
+  }
+  &.form {
+  	padding-bottom: 10px;
+  }
+}
+
+h3, h4 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font: 20px/20px "Helvetica Neue";
+	font-weight: 300;
+	&.big {
+		font: 26px/28px "Helvetica Neue";
+		font-weight: 500;
+	}
+}
+
+.text-center, .t-center {
+	text-align: center;
+}
+
+hr { border-color: black; margin-top: 10px; margin-bottom: 10px;}

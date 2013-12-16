@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Team one:</strong>
+  <%= @match.team_one %>
+</p>
+
+<p>
+  <strong>Team two:</strong>
+  <%= @match.team_two %>
+</p>
+
+<p>
+  <strong>Cpu game:</strong>
+  <%= @match.cpu_game %>
+</p>
+
+<p>
+  <strong>Player one:</strong>
+  <%= @match.player_one_id %>
+</p>
+
+<p>
+  <strong>Player two:</strong>
+  <%= @match.player_two_id %>
+</p>
+
+<p>
+  <strong>Player one score:</strong>
+  <%= @match.player_one_score %>
+</p>
+
+<p>
+  <strong>Player two score:</strong>
+  <%= @match.player_two_score %>
+</p>
+
+<p>
+  <strong>Is tie:</strong>
+  <%= @match.is_tie %>
+</p>
+
+<p>
+  <strong>Winner:</strong>
+  <%= @match.winner %>
+</p>
+
+<%= link_to 'Edit', edit_match_path(@match) %> |
+<%= link_to 'Back', matches_path %>

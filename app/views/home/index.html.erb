@@ -1,0 +1,26 @@
+<div class="row" style="margin-top:200px; margin-left:10px">
+	<div class="square col-md-3 col-md-offset">
+		<h1 class="t-center"> Welcome back, <%= current_user.name %>.</h1>
+		<hr/>
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="front-page-link"> <%= link_to "Play by myself.", new_one_player_match_path, :action => 'get', class: "" %> </h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="front-page-link"> Play with a friend. </h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="front-page-link"> See my past results. </h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="front-page-link"> Report a match score. </h3>
+			</div>
+		</div>
+	</div>
+</div>

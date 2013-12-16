@@ -1,0 +1,56 @@
+<div class="row" style="margin-top:130px">
+	<div class="square col-md-3 col-md-offset-2">
+		<div class="t-center">
+			<img src='/assets/manu.png' class="match-team-image">
+			<hr/>
+		</div>
+		<div class="row info-card">
+			<span class="glyphicon glyphicon-user"></span> 
+			Player 1: <%= current_user.name %>
+		</div>
+		<div class="row info-card">
+			<span class="glyphicon glyphicon-flag"></span>
+			Team: Manchester United
+		</div>
+		<div class="row info-card">
+			<span class="glyphicon glyphicon-globe"></span>
+			League: Barclay's Premiere League
+		</div>
+	</div>
+	<div class="col-md-2 t-center">
+		<h1 class="big" style="margin-top:140px">versus</h1>
+	</div>
+	<div class="square col-md-3 col-md-offset-">
+		<div class="t-center">
+			<%= image_tag @team2.avatar.url, class: "match-team-image" %>
+
+			<hr/>
+		</div>
+		<div class="row info-card" >
+			<span class="glyphicon glyphicon-user"></span> 
+			Player 2: CPU
+		</div>
+		<div class="row info-card">
+			<span class="glyphicon glyphicon-flag"></span>
+			Team: <%= @team2.name %>
+		</div>
+		<div class="row info-card">
+			<span class="glyphicon glyphicon-globe"></span>
+			League: <%= @team2.league %>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="square col-md-3 col-md-offset-2 t-center">
+		<h1 class="big match-score" contenteditable="true"> 0 </h1>
+	</div>
+	<div class="square col-md-3 col-md-offset-2 t-center">
+		<h1 class="big match-score" contenteditable="true"> 0 </h1>
+	</div>
+</div>
+<div class="row t-center" style="margin-top:15px">
+	<button type="button" class="btn btn-primary btn-lg" style="width:300px">Randomize Teams</button>
+</div>
+<div class="row t-center" style="margin-top:5px">
+	<button type="button" class="btn btn-primary btn-lg" style="width:300px">Match Completed</button>
+</div>
